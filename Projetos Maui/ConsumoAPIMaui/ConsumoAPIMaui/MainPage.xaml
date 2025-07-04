@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumoAPIMaui.MainPage">
+    <StackLayout Padding="20" Spacing="20">
+        <Entry x:Name="nameInput" Placeholder="Nome" FontSize="25" />
+
+        <Entry x:Name="emailInput" Placeholder="Email" FontSize="25"  Keyboard="Email"/>
+        
+        <Button Text="Adicionar Cliente" FontSize="25" Clicked="Button_Clicked"/>
+
+        <BoxView HorizontalOptions="Fill" Color="LightGray" HeightRequest="2" Margin="0, 10"/>
+
+        <CollectionView x:Name="collection" HeightRequest="430">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Margin="10">
+                        <Frame BackgroundColor="AliceBlue">
+                            <Grid ColumnDefinitions="*, Auto">
+                                <VerticalStackLayout Grid.Column="0">
+                                    <Label Text="{Binding Nome}" FontSize="20" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Email}" FontSize="15"/>
+                                </VerticalStackLayout>
+                                <Button Text="Editar" Grid.Column="1" Clicked="Button_Clicked_2"/>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>

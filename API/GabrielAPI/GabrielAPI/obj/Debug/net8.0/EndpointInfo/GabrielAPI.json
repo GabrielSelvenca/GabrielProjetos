@@ -1,0 +1,311 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "GabrielAPI",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Clientes": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Clientes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Clientes/{id}": {
+      "get": {
+        "tags": [
+          "Clientes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Clientes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Clientes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pedidos": {
+      "get": {
+        "tags": [
+          "Pedidos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/PedidosItens": {
+      "get": {
+        "tags": [
+          "PedidosItens"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Produtos": {
+      "get": {
+        "tags": [
+          "Produtos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "Pedidos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pedido"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pedido": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ClienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "DataPedido": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "Cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          },
+          "PedidoItens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PedidoIten"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PedidoIten": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "PedidoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ProdutoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "PrecoUnitario": {
+            "type": "number",
+            "format": "double"
+          },
+          "Pedido": {
+            "$ref": "#/components/schemas/Pedido"
+          },
+          "Produto": {
+            "$ref": "#/components/schemas/Produto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Produto": {
+        "required": [
+          "Nome",
+          "Preco"
+        ],
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "Preco": {
+            "type": "number",
+            "format": "double"
+          },
+          "Estoque": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "PedidoItens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PedidoIten"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

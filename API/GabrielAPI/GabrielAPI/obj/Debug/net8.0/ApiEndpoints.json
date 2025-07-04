@@ -1,0 +1,116 @@
+[
+  {
+    "ContainingType": "GabrielAPI.Controllers.ClientesController",
+    "Method": "Get",
+    "RelativePath": "api/Clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.ClientesController",
+    "Method": "Post",
+    "RelativePath": "api/Clientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "GabrielAPI.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.ClientesController",
+    "Method": "GetById",
+    "RelativePath": "api/Clientes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.ClientesController",
+    "Method": "Put",
+    "RelativePath": "api/Clientes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clienteNovo",
+        "Type": "GabrielAPI.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.ClientesController",
+    "Method": "Patch",
+    "RelativePath": "api/Clientes/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clienteNovo",
+        "Type": "GabrielAPI.Models.Cliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.PedidosController",
+    "Method": "Get",
+    "RelativePath": "api/Pedidos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.PedidosItensController",
+    "Method": "Get",
+    "RelativePath": "api/PedidosItens",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GabrielAPI.Controllers.ProdutosController",
+    "Method": "Get",
+    "RelativePath": "api/Produtos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

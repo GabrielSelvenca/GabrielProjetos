@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumoAPIMaui.ClienteEditPage"
+             Title="Editar dados do Cliente">
+    <Grid RowDefinitions="Auto, *">
+        <Grid RowDefinitions="Auto, *, Auto" Grid.Row="1" Padding="15">
+            <VerticalStackLayout Spacing="20" Grid.Row="0">
+                <Entry x:Name="nomeInput" Placeholder="Nome do cliente" FontSize="30" TextColor="DimGray"/>
+                <Entry x:Name="emailInput" Placeholder="Email do cliente" FontSize="30" TextColor="DimGray"/>
+            </VerticalStackLayout>
+            <Button x:Name="salvarBtn" Text="Salvar" Grid.Row="2" Clicked="Salvar"/>
+        </Grid>
+    </Grid>
+</ContentPage>
