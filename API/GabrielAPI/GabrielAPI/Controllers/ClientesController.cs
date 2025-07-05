@@ -93,5 +93,22 @@ namespace GabrielAPI.Controllers
 
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var user = ctx.Clientes.FirstOrDefault(u => u.Id == id);
+            if (user == null) return NotFound("Usuário não encontrado.");
+
+            var pedidos = ctx.Pedidos.Any(p => p.ClienteId == user.Id);
+
+            if (pedidos)
+                return BadRequest("Usuário possuí pedidos em aberto.");
+
+            ctx.Clientes.Remove(user);
+            ctx.SaveChanges();
+
+            return Ok();
+        }
     }
 }

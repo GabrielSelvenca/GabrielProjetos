@@ -922,7 +922,6 @@ C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\assets\OpenSans-Regular.ttf
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\assets\OpenSans-Semibold.ttf
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\bin\packaged_resources
-C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\src\com\companyname\consumoapimaui\R.java
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\_CompileJava.FileList.txt
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\compressed_assemblies.x86_64.ll
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\typemaps.x86_64.o
@@ -1368,3 +1367,6 @@ C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\bin\com.consumoapi.maui.aab
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\bin\com.consumoapi.maui.apks
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\android\src\com\consumoapi\maui\R.java
+C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\ConsumoAPIMaui.sourcelink.json
+C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\resizetizer\r\drawable\edit_svgrepo_com.png
+C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-android\resizetizer\r\drawable\remove_svgrepo_com.png

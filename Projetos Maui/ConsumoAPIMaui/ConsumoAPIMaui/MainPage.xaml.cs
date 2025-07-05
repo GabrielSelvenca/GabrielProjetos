@@ -19,19 +19,12 @@ namespace ConsumoAPIMaui
             collection.ItemsSource = response;
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            CarregarLista();
-        }
-
-        private void Button_Clicked_1(object sender, EventArgs e)
+        private void LoadListButton(object sender, EventArgs e)
         {
             CarregarLista();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void CreateClientButton(object sender, EventArgs e)
         {
             if (nameInput == null || emailInput == null)
             {
@@ -54,12 +47,16 @@ namespace ConsumoAPIMaui
             var sucesso = await ApiService<Cliente>.Post("clientes", novoCliente);
 
             if (sucesso != null)
+            {
                 collection.ItemsSource = await ApiService<Cliente>.GetList("clientes");
+                nameInput.Text = string.Empty;
+                emailInput.Text = string.Empty;
+            }
             else
                 await DisplayAlert("Ops!", "Erro ao criar usuário!", "Ok");
         }
 
-        private async void Button_Clicked_2(object sender, EventArgs e)
+        private async void EditButton(object sender, EventArgs e)
         {
             var button = (Button)sender;
             var cliente = (Cliente)button.BindingContext;
@@ -71,6 +68,38 @@ namespace ConsumoAPIMaui
             }
 
             await Navigation.PushAsync(new ClienteEditPage(cliente));
+            collection.ItemsSource = null;
+        }
+
+        private async void RemoveButton(object sender, EventArgs e)
+        {
+            var button = (Button)sender;
+            var cliente = (Cliente)button.BindingContext;
+
+
+            if (cliente == null)
+            {
+                await DisplayAlert("Dados não encontrados.", "Os dados do usuário que você tentou remover não foram encontrados no contexto atual.", "Ok");
+                return;
+            }
+
+            var confirmacao = await DisplayAlert("Deletar cliente.", "Você tem certeza que deseja deletar esse cliente? (Essa ação é irreverssível)", "Deletar", "Cancelar");
+
+            if (!confirmacao)
+                return;
+
+            var sucesso = await ApiService<Cliente>.Delete("clientes", cliente.Id);
+
+            if (!sucesso)
+            {
+                await DisplayAlert("Erro", "Não foi possível deletar o usuário. Ele pode ter pedidos em aberto.", "Ok");
+                return;
+            }
+            else
+            {
+                await DisplayAlert("Cliente deletado.", "Cliente deletado com suceeso.", "Ok");
+                collection.ItemsSource = null;
+            }
         }
     }
 }

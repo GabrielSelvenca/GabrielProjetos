@@ -298,3 +298,4 @@ C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ConsumoAPIMaui.pdb
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ConsumoAPIMaui.genruntimeconfig.cache
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\ConsumoAPIMaui.dll
+C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ConsumoAPIMaui.sourcelink.json

@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
 using System.Text;
-using System.Diagnostics;
-using ConsumoAPIMaui.Models;
+using System.Net;
 
 namespace ConsumoAPIMaui.Services
 {
@@ -60,11 +59,17 @@ namespace ConsumoAPIMaui.Services
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await Client.PutAsync(url, content);
-            response.EnsureSuccessStatusCode();
+            var responseBody = await response.Content.ReadAsStringAsync();
 
-            var responseRequest = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<T>(responseRequest);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new HttpRequestException($"Erro {response.StatusCode}: {responseBody}");
+            }
 
+            if (string.IsNullOrWhiteSpace(responseBody))
+                return null;
+
+            var result = JsonSerializer.Deserialize<T>(responseBody);
             return result;
         }
 
@@ -86,6 +91,26 @@ namespace ConsumoAPIMaui.Services
 
             var result = JsonSerializer.Deserialize<T>(responseBody);
             return result;
+        }
+
+        public static async Task<bool> Delete(string url, int id)
+        {
+            var response = await Client.DeleteAsync($"{url}/{id}");
+            var responseBody = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                if (response.StatusCode == HttpStatusCode.BadRequest)
+                {
+                    return false;
+                }
+                throw new HttpRequestException($"Erro {response.StatusCode}: {responseBody}");
+            }
+
+            if (string.IsNullOrEmpty(responseBody))
+                return false;
+
+            return true;
         }
     }
 }

@@ -466,3 +466,4 @@ C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Gabriel Projetos\Projetos Maui\ConsumoAPIMaui\ConsumoAPIMaui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ConsumoAPIMaui.sourcelink.json

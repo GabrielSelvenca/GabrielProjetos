@@ -6,12 +6,14 @@
         <Entry x:Name="nameInput" Placeholder="Nome" FontSize="25" />
 
         <Entry x:Name="emailInput" Placeholder="Email" FontSize="25"  Keyboard="Email"/>
-        
-        <Button Text="Adicionar Cliente" FontSize="25" Clicked="Button_Clicked"/>
+
+        <Button Text="Adicionar Cliente" FontSize="25" Clicked="CreateClientButton"/>
 
         <BoxView HorizontalOptions="Fill" Color="LightGray" HeightRequest="2" Margin="0, 10"/>
 
-        <CollectionView x:Name="collection" HeightRequest="430">
+        <Button Text="Carregar lista" FontSize="25" Clicked="LoadListButton"/>
+        
+        <CollectionView x:Name="collection" HeightRequest="360">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Margin="10">
@@ -21,7 +23,20 @@
                                     <Label Text="{Binding Nome}" FontSize="20" FontAttributes="Bold"/>
                                     <Label Text="{Binding Email}" FontSize="15"/>
                                 </VerticalStackLayout>
-                                <Button Text="Editar" Grid.Column="1" Clicked="Button_Clicked_2"/>
+                                <HorizontalStackLayout Grid.Column="1" Spacing="10">
+                                    <Button ImageSource="edit_svgrepo_com.png" 
+                                                 Clicked="EditButton"
+                                                 HorizontalOptions="Center"
+                                                 VerticalOptions="Center"
+                                                 WidthRequest="1"
+                                                 HeightRequest="1"/>
+                                    <Button ImageSource="remove_svgrepo_com.png" 
+                                                 Clicked="RemoveButton"
+                                                 HorizontalOptions="Center"
+                                                 VerticalOptions="Center"
+                                                 WidthRequest="1"
+                                                 HeightRequest="1"/>
+                                </HorizontalStackLayout>
                             </Grid>
                         </Frame>
                     </StackLayout>
