@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_Tower-api", "WS_Tower-api\WS_Tower-api.csproj", "{E5454F4F-E52C-4DF1-A7DD-9A8786D5A036}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5454F4F-E52C-4DF1-A7DD-9A8786D5A036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5454F4F-E52C-4DF1-A7DD-9A8786D5A036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5454F4F-E52C-4DF1-A7DD-9A8786D5A036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5454F4F-E52C-4DF1-A7DD-9A8786D5A036}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6955C36-7633-4CF7-9FDC-49F9B7FF0D3A}
+	EndGlobalSection
+EndGlobal

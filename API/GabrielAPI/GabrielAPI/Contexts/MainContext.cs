@@ -24,8 +24,8 @@ public partial class MainContext : DbContext
 
     public virtual DbSet<Produto> Produtos { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Data Source=NOTE-GABRIEL\\SQLEXPRESS; initial catalog=EstudoAPI; Trusted_Connection=true; Integrated Security=true; TrustServerCertificate=true");
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseSqlServer("Data Source=NOTE-GABRIEL\\SQLEXPRESS; initial catalog=EstudoAPI; Trusted_Connection=true; Integrated Security=true; TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

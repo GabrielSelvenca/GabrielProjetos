@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS_Tower.LoginPage">
+    <VerticalStackLayout Spacing="5" VerticalOptions="Center" Margin="60">
+        <Label 
+            Text="Acessor"
+            FontFamily="Open Sans SemiBold"
+            FontSize="24"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="entryUsuario" Placeholder="usuario"/>
+        <Entry x:Name="entrySenha" Placeholder="senha"/>
+        <Button x:Name="loginBtn" Text="Login" BackgroundColor="#00903E" WidthRequest="100" Clicked="Logar"/>
+    </VerticalStackLayout>
+</ContentPage>

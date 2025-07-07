@@ -1,0 +1,1 @@
+V1.0.0 Desenvolvido por <nome do competidor> <DR> durante a seletiva nacional de 2020.

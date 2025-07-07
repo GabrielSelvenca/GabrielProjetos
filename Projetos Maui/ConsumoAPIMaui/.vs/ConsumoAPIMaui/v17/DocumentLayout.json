@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|solutionrelative:consumoapimaui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|c:\\gabriel projetos\\projetos maui\\consumoapimaui\\consumoapimaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|solutionrelative:consumoapimaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|c:\\gabriel projetos\\projetos maui\\consumoapimaui\\consumoapimaui\\clienteeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|solutionrelative:consumoapimaui\\clienteeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|c:\\gabriel projetos\\projetos maui\\consumoapimaui\\consumoapimaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|solutionrelative:consumoapimaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|c:\\gabriel projetos\\projetos maui\\consumoapimaui\\consumoapimaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C198CA9C-8AE3-4160-AA81-DA7927610806}|ConsumoAPIMaui\\ConsumoAPIMaui.csproj|solutionrelative:consumoapimaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClienteEditPage.xaml",
               "DocumentMoniker": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\ClienteEditPage.xaml",
               "RelativeDocumentMoniker": "ConsumoAPIMaui\\ClienteEditPage.xaml",
@@ -50,12 +50,11 @@
               "RelativeToolTip": "ConsumoAPIMaui\\ClienteEditPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-04T13:08:51.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T13:08:51.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClienteEditPage.xaml.cs",
               "DocumentMoniker": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\ClienteEditPage.xaml.cs",
               "RelativeDocumentMoniker": "ConsumoAPIMaui\\ClienteEditPage.xaml.cs",
@@ -63,12 +62,11 @@
               "RelativeToolTip": "ConsumoAPIMaui\\ClienteEditPage.xaml.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T13:10:06.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T13:10:06.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\MainPage.xaml",
               "RelativeDocumentMoniker": "ConsumoAPIMaui\\MainPage.xaml",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "ConsumoAPIMaui\\MainPage.xaml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-04T12:40:47.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-04T12:40:47.865Z"
             },
             {
               "$type": "Document",
@@ -87,20 +84,20 @@
               "RelativeDocumentMoniker": "ConsumoAPIMaui\\MainPage.xaml.cs",
               "ToolTip": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\MainPage.xaml.cs",
               "RelativeToolTip": "ConsumoAPIMaui\\MainPage.xaml.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T17:00:16.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "ConsumoAPIMaui\\Services\\ApiService.cs",
               "ToolTip": "C:\\Gabriel Projetos\\Projetos Maui\\ConsumoAPIMaui\\ConsumoAPIMaui\\Services\\ApiService.cs",
               "RelativeToolTip": "ConsumoAPIMaui\\Services\\ApiService.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAgwGEAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAqwG4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T19:03:40.233Z",
               "EditorCaption": ""

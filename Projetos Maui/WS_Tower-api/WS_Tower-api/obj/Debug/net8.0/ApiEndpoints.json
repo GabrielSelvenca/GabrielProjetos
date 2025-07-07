@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "LoginUser",
+    "RelativePath": "api/Assets/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "WS_Tower_api.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "CriarRelato",
+    "RelativePath": "api/Assets/relatar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "relato",
+        "Type": "WS_Tower_api.Models.Relato",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "DeleteRelato",
+    "RelativePath": "api/Assets/relato/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "GetRelatos",
+    "RelativePath": "api/Assets/relatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "GetRelatosByID",
+    "RelativePath": "api/Assets/relatos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "GetUsers",
+    "RelativePath": "api/Assets/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WS_Tower_api.Controllers.Assets",
+    "Method": "GetUsersByID",
+    "RelativePath": "api/Assets/usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
